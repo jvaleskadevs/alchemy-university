@@ -33,6 +33,6 @@ _Hint_ - Use [nodemon](https://www.npmjs.com/package/nodemon) instead of `node` 
 
 ### Nonce
 
-- The `nonce.json` file in the `server/scripts` folder must be the same number as the `totalTx` values, it's 0, and it should be increments with every transaction signature generated, don't forget to reset it everytime the server goes down or the transactions will fail.
+- The `nonce` value from the `nonce.json` file in the `server/scripts` folder must be the same number as the `totalTx` values in `server/index.js`, it's 0, and it should be increments with every transaction signature generated, don't forget to reset it everytime the server goes down or the transactions will fail.
 
 (Maybe I'm missing something, give me a shout on the alchemy university discord if you want)
